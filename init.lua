@@ -20,7 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- 2. Agora o Neovim sabe o que é o "lazy"
 -- Seus plugins e configurações vêm aqui embaixo...
-
+require("core.leaderkey")
 require("lazy").setup("plugins")
 require("core.keymaps")
 --catppuccin
