@@ -1,0 +1,17 @@
+# Pastas de dados e plugins (o Lazy baixa tudo sozinho no PC dele)
+lazy-lock.json
+.netrwhist
+
+# Arquivos temporários de edição do Vim/Neovim
+*.swp
+*.swo
+undo/
+backup/
+
+# Logs de erro e pastas de LSP/Mason
+.lspconfig/
+.mason/
+
+# Se você estiver usando o macOS
+.DS_Store
+

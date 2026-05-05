@@ -1,0 +1,6 @@
+# Garante que arquivos Lua sejam tratados como texto e usem quebra de linha LF (padrão Linux/Mac)
+*.lua text eol=lf
+
+# Faz com que o GitHub ignore arquivos de documentação pesados nas estatísticas
+doc/*.txt linguist-documentation
+

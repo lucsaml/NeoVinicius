@@ -16,6 +16,8 @@ return {
       lspconfig.pyright.setup({})
       -- Ativa o C/C++
       lspconfig.clangd.setup({})
+      --ativa o TS
+      require("lspconfig").ts_ls.setup({})
     end,
   }
 }
