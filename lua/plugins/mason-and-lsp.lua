@@ -1,6 +1,12 @@
 return {
   -- Mason e LSP
-  { "williamboman/mason.nvim", config = true },
+{
+  "williamboman/mason-lspconfig.nvim",
+  opts = {
+    ensure_installed = { "lua_ls", "pyright", "jdtls", "clangd", "ts-ls" }, -- Coloca os 9 aqui
+    automatic_installation = true,
+  },
+},
   { "williamboman/mason-lspconfig.nvim", config = true },
   { "neovim/nvim-lspconfig" },
 
