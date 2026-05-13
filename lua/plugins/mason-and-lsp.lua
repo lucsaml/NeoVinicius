@@ -1,9 +1,13 @@
 return {
   -- Mason e LSP
-{
+ {
+    "williamboman/mason.nvim",
+    config = true,
+    },
+  {
   "williamboman/mason-lspconfig.nvim",
   opts = {
-    ensure_installed = { "lua_ls", "pyright", "jdtls", "clangd", "ts-ls" }, -- Coloca os 9 aqui
+    ensure_installed = { "lua_ls", "pyright", "jdtls", "clangd", "ts_ls", "html" },
     automatic_installation = true,
   },
 },
@@ -29,7 +33,7 @@ return {
             ellipsis_char = '...',
           })
         },
-        -- Aqui você pode adicionar os mappings depois
+        -- dá pra colocar mappings aki
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
         }),

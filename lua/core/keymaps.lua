@@ -19,5 +19,5 @@ vim.keymap.set('n', '[d', function() vim.diagnostic.goto_prev() end, { silent = 
 vim.keymap.set('n', '<leader>of', function() vim.diagnostic.open_float() end, { silent = true, desc = "mensagem completa"})
 
 -- code actions
-vim.keymap.set('n', '<leader>ca', function() vim.diagnostic.code_action() end, { silent = true, desc = "code actions"})
+vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, { silent = true, desc = "code actions"})
 

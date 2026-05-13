@@ -18,6 +18,10 @@ return {
       lspconfig.clangd.setup({})
       --ativa o TS
       require("lspconfig").ts_ls.setup({})
+      -- Ativa o HTML (que vai te salvar das tags abertas!)
+	lspconfig.html.setup({})
+	-- Ativa o CSS
+	lspconfig.cssls.setup({})
     end,
   }
 }
